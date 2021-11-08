@@ -8,6 +8,15 @@ export const addToCart = (itemID) => {
     }
 }
 
+export const add10ToCart = (itemID) => {
+    return {
+        type: 'ADD_10',
+        payload: {
+            id:itemID
+        }
+    }
+}
+
 export const removeFromCart = (itemID) => {
     return {
         type: 'REMOVE_FROM_CART',

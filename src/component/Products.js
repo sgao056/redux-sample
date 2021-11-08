@@ -10,9 +10,10 @@ const Products = ({products}) => {
             <CartCount />
             {   
                 products.map((product) => {
-                    console.log(product)
                     return (                    
-                        <Product key={product.id} productData={product}/>
+                        <div style={{display:'flex', alignItems:"center", justifyContent:"center"}}>
+                            <Product key={product.id} productData={product}/>
+                        </div>
                     )
                 })
             }

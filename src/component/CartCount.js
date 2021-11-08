@@ -6,7 +6,7 @@ const CartCount = ({cart}) => {
     useEffect(()=>{
         let count = 0;
         cart.forEach(item => {
-            count += 1
+            count += item.qty
         })
         setCartCounter(count)
     },[cart, CartCounter])
@@ -15,7 +15,7 @@ const CartCount = ({cart}) => {
             <div style={{fontSize: '100px', fontWeight: '800'}}>
                 {CartCounter}
             </div>
-            <button>1111</button>
+            <button>Click to open Cart</button>
         </div>
     )
 }
